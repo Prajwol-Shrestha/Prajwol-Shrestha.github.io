@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Spectral|Rubik">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/chatyang_animation.css">
+	<title>Portfolio - Prajwol Shrestha</title>
+</head>
+<body>
+	<div class="hero-container">
+	<div class="rain"></div>
+	<div class="lightining"></div>
+		<nav>
+			<span class="logo"> <a href="index.html"> Prajwol <br> Shrestha </a></span>
+
+			<div class="navbar-l">
+				<ul>
+					<li><a href="index.html"> HOME </a></li>
+					<li><a href="skills.html"> SKILLS </a></li>
+					<li><a href="contact.html"> CONTACT </a></li>
+				</ul>
+			</div>
+
+
+			<span class="menu-icon" onclick="openNav()"> &#9776; </span>
+
+			<div id="nav-s" class="overlay">
+				<span class="close-btn" onclick="closeNav()"> &times; </span>
+				<ul class="overlay-content">
+					<li><a href="index.html"> HOME </a></li>
+					<li><a href="skills.html"> SKILLS </a></li>
+					<li><a href="contact.html"> CONTACT </a></li>
+				</ul>
+			</div>
+
+		</nav>
+
+		<div class="hero-content">
+			<h1> Hi, <br> I am Prajwol.</h1>
+			<p> A Front End and Python Developer.</p><br>
+			<a href="skills.html"> <button> SKILLS </button></a>
+			<a href="contact.html"> <button> CONTACT </button></a>
+		</div>
+	</div>
+
+
+	<script type="text/javascript">
+		/* Open */
+		function openNav() {
+		  document.getElementById("nav-s").style.height = "100%";
+		}
+
+		/* Close */
+		function closeNav() {
+		  document.getElementById("nav-s").style.height = "0%";
+		}
+
+	</script>
+</body>
+</html>

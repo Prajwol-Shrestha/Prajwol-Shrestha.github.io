@@ -1,0 +1,61 @@
+.rain{
+    height: 0;
+    background-image: url(../images/rain.png);
+    animation: rain 0.3s linear infinite;
+    z-index: 0;
+}
+@keyframes rain{
+    0%{
+        background-position: 0% 0%;
+    }
+    100%{
+        background-position: 10% 80%;
+    }
+}
+.rain::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/lightining.png);
+    top: -50px;
+    transform: rotate(180deg);
+    animation: lightining 5s linear infinite;
+    opacity: 1;
+    z-index:  -2;
+}
+@keyframes lightining{
+    0%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 0;
+    }
+    21%{
+        opacity: 1;
+    }
+    25%{
+        opacity: 0;
+    }
+    30%{
+        opacity: ;
+    }
+    31%{
+        opacity: 1;
+    }
+    35%{
+        opacity: 0;
+    }
+    80%{
+        opacity: 0;
+    }
+    81%{
+        opacity:1;
+    }
+    85%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
