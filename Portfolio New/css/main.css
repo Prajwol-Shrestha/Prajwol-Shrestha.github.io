@@ -5,10 +5,6 @@
 	--links_color: rgba(240, 240, 240, 0.7);
 }
 
-$desktop: 1200px;
-$laptop: 1024px;
-&tablet: 760px;
-
 *{
 	box-sizing: border-box;
 	padding: 0;
@@ -19,6 +15,7 @@ body{
 	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(../images/hero-small.jpg) no-repeat center fixed;
 	background-size: cover;
 	color: #FFFFFF;
+	overflow:auto;
 }
 h1,h2,h3,h4,.logo{
 	font-family: Spectral, serif;
@@ -60,6 +57,8 @@ a button:hover{
 
 .hero-container{
 	display: block;
+	height: 90vh;
+	width: 100%;
 }
 nav{
 	display: flex;
@@ -77,7 +76,7 @@ nav .logo{
 nav .navbar-l li{
 	display: none;
 	padding: .5em;
-	font-size: 1.5em;
+	font-size: 1.2em;
 }
 
 nav .menu-icon{
@@ -117,7 +116,7 @@ li a:hover{
 .hero-content{
 	margin: 0 0 0 1.5em;
 	position: relative;
-	transform: translateY(35%);
+	transform: translateY(30%);
 }
 .hero-content > h1{
 	line-height: 2.5em;
@@ -194,7 +193,7 @@ textarea{
 /*  Responsive For Tablets*/
 
 
-@media only screen and (min-width: 760px) and (max-width: 1024px) {
+@media only screen and (min-width: 760px) and (max-width: 1020px) {
 	h1,h2,h3,h4,.logo{
 		letter-spacing: .3em;
 	}
@@ -204,10 +203,10 @@ textarea{
 		color: var(--white);
 	}
 	button, .button{
-		padding: .9em 1.1em .9em 1.1em;
-		width: 35%;
+		padding: .8em 1em .8em 1em;
+		width: 30%;
 		margin: 2em 1em 0 0;
-		font-size: 1.2em;
+		font-size: 1em;
 	}
 	button:hover{
 		border: 2px solid var(--black);
@@ -225,6 +224,8 @@ textarea{
 
 	.hero-container{
 		display: block;
+		height: 80vh;
+		width: 100%;
 	}
 	nav{
 		display: flex;
@@ -234,7 +235,7 @@ textarea{
 		justify-content: space-between;
 	}
 	nav .logo{
-		font-size: 1.5em;
+		font-size: 1.2em;
 	}
 
 	nav .navbar-l li{
@@ -251,19 +252,20 @@ textarea{
 		transform: translateY(35%);
 	}
 	.hero-content > h1{
-		line-height: 2.5em;
-		font-size: 3em;
+		line-height: 2.3em;
+		font-size: 2.5em;
 		margin-bottom:0;
 	}
 	.hero-content > p{
 		margin-top: 0;
 		margin-bottom: 2em;
-		font-size: 1.3em;
+		font-size: 1em;
+		letter-spacing: .3em;
 	}
 
 	.card-container{
 		margin: auto;
-		width: 80vw;
+		width: 70vw;
 	}
 	.card-container .card{
 		width: 180px;
@@ -279,27 +281,29 @@ textarea{
 	}
 
 	form{
-		width: 80%;
 		margin: auto;
+		width: 70%;
 	}
 	form label{
-		padding: 1em 0 1em 0;
-		font-weight: bold;
 		font-size: 1.3em;
 	}
-	form input[type= "text"],input[type="email"],textarea{
-		align-self: center;
-		width: 80%;
+	form input, textarea{
+		width: 100%;
+		padding: .5em;
+		border: 1px solid var(--white);
+		font-size: 1.2em;
+	}
+	textarea{
+		resize: none;
+		height: 8em;
 		font-size: 1.2em;
 	}
 	form .button{
-		margin-top: .8em;
+		margin-top: 1em;
 		align-self: center;
-		width: 60%;
+		width: 80%;
 	}
-	textarea{
-		font-size: 1.3em;
-	}
+
 
 }
 
@@ -323,7 +327,7 @@ textarea{
 /*  Responsive For Laptops*/
 
 
-@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
 	body{
 		background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(../images/hero-image.jpg) no-repeat center fixed;
 		background-size: cover;
@@ -339,14 +343,16 @@ textarea{
 		color: var(--white);
 	}
 	button, .button{
-		padding: 1em 1.2em 1em 1.2em;
+		padding: .8em 1em .8em 1em;
 		width: 20%;
-		margin: 2em 1em 0 0;
-		font-size: 1.2em;
+		margin: 1.5em 1em 0 0;
+		font-size: 1em;
 	}
 
 	.hero-container{
 		display: block;
+		height: 90vh;
+		width: 100%;
 	}
 	nav{
 		display: flex;
@@ -375,17 +381,18 @@ textarea{
 	.hero-content{
 		margin: 0 0 0 1.5em;
 		position: relative;
-		transform: translateY(35%);
+		transform: translateY(25%);
 	}
 	.hero-content > h1{
-		line-height: 2.6em;
-		font-size: 3.5em;
+		line-height: 2.2em;
+		font-size: 3.2em;
 		margin-bottom: 0;
 	}
 	.hero-content > p{
 		margin-bottom: 2em;
-		font-size: 1.5em;
+		font-size: 1.2em;
 		margin-top: 0;
+		letter-spacing: .3em;
 	}
 
 	.card-container{
@@ -444,11 +451,11 @@ textarea{
 
 
 
-/* For Desktops */
+/* For Large laptops and Desktops */
 
 
 
-@media only screen and (min-width: 1201px){
+@media only screen and (min-width: 1220px){
 	body{
 		background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(../images/hero-image.jpg) no-repeat center fixed;
 		background-size: cover;
@@ -464,14 +471,16 @@ textarea{
 		color: var(--white);
 	}
 	button, .button{
-		padding: 1em 1.2em 1em 1.2em;
-		width: 25%;
+		padding: .8em 1em .8em 1em;
+		width: 20%;
 		margin: 2em 1em 0 0;
-		font-size: 1.2em;
+		font-size: 1em;
 	}
 
 	.hero-container{
 		display: block;
+		height: 90vh;
+		width: 100%;
 	}
 	nav{
 		display: flex;
@@ -481,7 +490,7 @@ textarea{
 		justify-content: space-between;
 	}
 	nav .logo{
-		font-size: 1.8em;
+		font-size: 1.3em;
 	}
 
 	nav .navbar-l li{
@@ -503,14 +512,15 @@ textarea{
 		transform: translateY(35%);
 	}
 	.hero-content > h1{
-		line-height: 2.6em;
-		font-size: 3.5em;
+		line-height: 2.2em;
+		font-size: 3em;
 		margin-bottom: 0;
 	}
 	.hero-content > p{
 		margin-bottom: 2em;
-		font-size: 1.5em;
+		font-size: 1.2em;
 		margin-top: 0;
+		letter-spacing: .3em;
 	}
 
 	.card-container{
@@ -527,7 +537,7 @@ textarea{
 	}
 	.card-container .card h2{
 		text-align: center;
-		font-size: 2em;
+		font-size: 1.8em;
 	}
 
 	form{
