@@ -276,7 +276,7 @@ textarea{
 		height: 200px;
 	}
 	.card-container .card h2{
-		font-size: 1.8em;
+		font-size: 1.5em;
 		letter-spacing: .15em;
 	}
 
@@ -400,16 +400,16 @@ textarea{
 		width: 60vw;
 	}
 	.card-container .card{
-		width: 200px;
-		height: 200px;
+		width: 190px;
+		height: 190px;
 	}
 	.card-container .card:hover{
-		width: 220px;
-		height: 220px;
+		width: 210px;
+		height: 210px;
 	}
 	.card-container .card h2{
-		text-align: center;
-		font-size: 2em;
+		text-align: left;
+		font-size: 1.4em;
 	}
 
 	form{
