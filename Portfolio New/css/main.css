@@ -40,6 +40,7 @@ button, .button{
 	letter-spacing: .2em;
 	font-weight: bold;
 	text-align: center;
+	cursor: pointer;
 }
 button:hover{
 	border: 2px solid var(--black);
@@ -143,8 +144,8 @@ li a:hover{
 }
 .card-container .card:hover{
 	border: 5px solid var(--button_color);
-	width: 180px;
-	height: 180px;
+	width: 165px;
+	height: 165px;
 }
 .card-container .card h2{
 	transform: rotate(-45deg);
