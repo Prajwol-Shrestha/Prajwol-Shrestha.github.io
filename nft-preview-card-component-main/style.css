@@ -1,0 +1,184 @@
+:root{
+    --mainBg: hsl(217, 54%, 11%);
+    --cardBg: hsl(216, 50%, 16%);
+    --white: hsl(0, 0%, 100%);
+    --price: hsl(178, 100%, 50%);
+    --line: hsl(215, 32%, 27%);
+    --para: hsl(215, 51%, 70%);
+}
+
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Outfit', sans-serif;
+    background: var(--mainBg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: var(--white);
+}
+*{
+    box-sizing: inherit;
+}
+
+h2:hover{
+    color: var(--price);
+    cursor: pointer;
+}
+
+p{
+    font-size: 18px;
+    letter-spacing: .05rem;
+    color: var(--para);
+}
+
+
+.cardContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: var(--cardBg);
+    border-radius: 20px;
+    width: calc(100vw - 10vw);
+}
+
+.cardContent{
+    margin: 1.5rem;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: var(--price);
+}
+
+.container:hover .overlay {
+  opacity: .6;
+}
+
+.icon {
+  color: white;
+  font-size: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+span{
+    font-size: 1.2rem;
+}
+.price{
+    color: var(--price);
+}
+.time{
+    color: var(--para);
+    float: right;
+}
+
+hr{
+    background-color: var(--line);
+    opacity: 0.5;
+}
+
+.avatarContainer{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.avatar{
+    width: 40px;
+    margin-right: 1rem;
+    border-radius: 25px;
+    border: 2px solid var(--white);
+}
+span{
+    color: var(--para);
+}
+
+.name{
+    color: var(--white);
+    cursor: pointer;
+}
+.name:hover{
+    color: var(--price);
+}
+
+
+/*Laptop (1024px)*/
+
+@media (min-width: 1024px){
+    h2{
+        font-size: 1.5rem;
+    }
+
+    .cardContainer{
+        width: calc(100vw - 60vw);
+    }
+    p{
+        font-size: 20px;
+    }
+    .price, .time{
+        font-size: 20px;
+    }
+    .avatar{
+        width: 40px;
+    }
+    .name{
+        font-size: 20px;
+    }
+
+}
+
+
+/*Desktop (1440px)*/
+
+@media (min-width: 1400px){
+    h2{
+        font-size: 2rem;
+    }
+
+    .cardContainer{
+        width: calc(100vw - 70vw);
+    }
+    p{
+        font-size: 22px;
+    }
+    .price, .time{
+        font-size: 22px;
+    }
+    .avatar{
+        width: 50px;
+    }
+    .name{
+        font-size: 22px;
+    }
+
+}
