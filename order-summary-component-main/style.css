@@ -20,9 +20,9 @@ html,body{
 }
 body{
 	background: url(./images/pattern-background-mobile.svg);
-	background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+	background-repeat: no-repeat;
+    	background-size: 100% auto;
+   	background-color: #e0e8ff;
 }
 
 .flex-container{
@@ -37,7 +37,7 @@ body{
 .card-container{
 	background-color: var(--white);
 	border-radius: 1rem;
-	box-shadow: 5px 5px 2.5px grey;
+	box-shadow: 10px 15px 12px 0px rgba(107,106,106,0.75);
 }
 
 .card-container > img{
