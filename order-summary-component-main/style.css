@@ -122,9 +122,9 @@ a:hover{
 @media (min-width: 768px){
 	body{
 		background: url(./images/pattern-background-desktop.svg);
-		background-position: center;
-	  background-repeat: no-repeat;
-	  background-size: cover;
+		background-repeat: no-repeat;
+		background-size: 100% auto;
+		background-color: #e0e8ff;
 	}
 	.card-container{
 		width: 50vw;
@@ -134,9 +134,9 @@ a:hover{
 @media (min-width: 1440px){
 	body{
 		background: url(./images/pattern-background-desktop.svg);
-		background-position: center;
-	  background-repeat: no-repeat;
-	  background-size: cover;
+		background-repeat: no-repeat;
+		background-size: 100% auto;
+		background-color: #e0e8ff;
 	}
 	.card-container{
 		width: 30vw;
