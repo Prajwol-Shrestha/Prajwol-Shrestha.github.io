@@ -40,9 +40,16 @@ html, body{
 	border-radius: 1rem;
 }
 
+.imgContainer{
+	background-color: hsl(277, 90%, 30%);
+	border-radius: 0 1rem 1rem 0;
+}
 .imgContainer > img{
+	background-blend-mode:multiply;
 	width: calc(100vw - 3rem);
-	border-radius: 1rem 1rem 0 0;
+	border-radius: 0 1rem 1rem 0;
+	opacity: 0.5;
+	display: block;
 }
 
 .cardContent{
@@ -93,9 +100,14 @@ p{
 		flex-direction: row-reverse;
 		margin: 3rem;
 	}
+	.imgContainer{
+		background-color: hsl(277, 90%, 30%);
+		border-radius: 0 1rem 1rem 0;
+	}
 	.imgContainer > img{
 		border-radius: 0 1rem 1rem 0;
 		width: 32rem;
+		display: block;
 	}
 	.cardContent{
 		flex-direction: column;
@@ -131,9 +143,14 @@ p{
 		flex-direction: row-reverse;
 		margin: 15rem;
 	}
+	.imgContainer{
+		background-color: hsl(277, 90%, 30%);
+		border-radius: 0 1rem 1rem 0;
+	}
 	.imgContainer > img{
 		border-radius: 0 1rem 1rem 0;
 		width: 35rem;
+		display: block;
 	}
 	.cardContent{
 		flex-direction: column;
