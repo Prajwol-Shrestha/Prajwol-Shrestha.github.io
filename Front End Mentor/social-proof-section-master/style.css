@@ -65,6 +65,7 @@ p{
 }
 .ratings{
 	width: 80vw;
+	max-width: 80vw;
 	margin: .5rem;
 	padding: 1rem 0;
 	text-align: center;
@@ -90,6 +91,7 @@ p{
 	background-color: var(--veryDarkMagneta);
 	padding: 1rem;
 	border-radius: .5rem;
+	max-width: 25rem;
 }
 .testimonial{
 	padding: 1rem;
