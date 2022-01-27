@@ -25,263 +25,268 @@
 }
 
 body{
-	min-height: 100vh;
-	max-width: 100vw;
+	padding: 6rem 2rem;
 	background-color: var(--veryDarkBlue);
-	padding: 4rem 1rem;
 }
-
-.mainContainer{
-	min-height: 100vh;
-	display: flex;
+.grid-container{
+	height: auto;
+	display: grid;
 	justify-content: center;
-	align-items: center;
-	flex-direction: column;
+	align-content: center;
+	color: var(--white);
 }
 
-.cardBg{
+.profile-card{
+	display:grid;
+	background-color: var(--darkBlue);
+	border-radius: 1rem;
+}
+
+.profile-header{
 	min-width: 20rem;
-	background-color: var(--darkBlue);
-	border-radius: 1rem;
-}
-
-.cardFg{
-	border-radius: 1rem;
-	display: flex;
+	display: grid;
+	grid-template-columns: 5rem auto;
 	justify-content: center;
-	align-items: center;
-	column-gap: 2rem;
-	padding: 2rem;
+	align-content: center;
 	background-color: var(--blue);
-	color: var(--paleBlue);
+	padding: 2rem;
+	border-radius: 1rem;
 }
-.cardFg >img{
-	width: 4rem;
-	border: 3px solid white;
+.profile-header > img{
+	width: 3.5rem;
 	border-radius: 50%;
+	border: 3px solid var(--white);
 }
-h1, h2, h3{
-	color: var(--white);
+.profile-header  h1{
 	font-weight: 300;
-}
-h3{
-	font-weight: 400;
-}
-
-.timeFrame{
-	display: flex;
-	text-align: center;
-	padding: 1.5rem;
-	color: var(--desaturatedBlue);
-}
-.timeFrame > span{
-	padding: 1rem;
-	cursor: pointer;
-}
-.timeFrame > span:hover{
-	color: var(--white);
-}
-
-
-.active{
-	color: var(--white);
-}
-
-.activitiesCards{
-	display: flex;
-	flex-direction: column;
-}
-.activityContainer{
-	min-width: 20.5rem;
-	height: 10rem;
-	margin-top: 2rem;
-	border-radius: 1rem;
-	position: relative;
-	cursor: pointer;
-}
-.activityContent{
-	background-color: var(--darkBlue);
-	position: absolute;
-	bottom: 0px;
-	display: flex;
-	flex-direction: column;
-	gap: 1rem;
-	width: 100%;
-	padding: 1.5rem;
-	border-radius: 1rem;
-}
-.activityContent:hover{
-	background-color: var(--desaturatedBlue);
-}
-
-.title{
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	color: var(--paleBlue);
-}
-.title > span{
-	letter-spacing: .25rem;
 	font-size: 1.5rem;
-	font-weight: 500;
-	cursor: pointer;
 }
-.title > span:hover{
-	color: var(--white);
-}
-.time{
-	display: flex;
-	justify-content: space-between;
+.profile-timeframe{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-column-gap: 3rem;
+	justify-content: center;
+	align-content: center;
+	padding: 1.5rem 0;
+	background-color: var(--darkBlue);
+	border-radius: 0 0 1rem 1rem;
 	color: var(--paleBlue);
 }
-
-
-
-.work{
-	background: url('images/icon-work.svg');
-	background-position: top right;
-	background-repeat: no-repeat;
-	background-color: var(--lightOrange);.
+.profile-timeframe p:hover{
+	cursor: pointer;
+	color: var(--white);
 }
 
-.play{
-	background: url('images/icon-play.svg');
-	background-color: var(--softBlue);
-	background-position: top right;
+.grid-item{
+
+}
+.activity{
+
+}
+
+.activity-card-bg {
+	min-width: 20rem;
+	border-radius: 1rem;
+	margin-top: 2rem;
+	height: 10rem;
+	display: grid;
+}
+.work{
+	background: url('./images/icon-work.svg');
+	background-color: var(--lightOrange);
 	background-repeat: no-repeat;
+	background-position: top right;
+}
+.play{
+	background: url('./images/icon-play.svg');
+	background-color: var(--softBlue);
+	background-repeat: no-repeat;
+	background-position: top right;
 }
 .study{
-	background: url('images/icon-study.svg');
+	background: url('./images/icon-study.svg');
 	background-color: var(--lightRed);
-	background-position: top right;
 	background-repeat: no-repeat;
+	background-position: top right;
 }
 .exercise{
-	background: url('images/icon-exercise.svg');
+	background: url('./images/icon-exercise.svg');
 	background-color: var(--limeGreen);
-	background-position: top right;
 	background-repeat: no-repeat;
+	background-position: top right;
 }
 .social{
-	background: url('images/icon-social.svg');
+	background: url('./images/icon-social.svg');
 	background-color: var(--violet);
-	background-position: top right;
 	background-repeat: no-repeat;
-}
-.selfCare{
-	background: url('images/icon-self-care.svg');
-	background-color: var(--softOrange);
 	background-position: top right;
-	background-repeat: no-repeat;	
 }
+.selfcare{
+	background: url('./images/icon-self-care.svg');
+	background-color: var(--softOrange);
+	background-repeat: no-repeat;
+	background-position: top right;
+}
+.activity-card-content{
+	background-color: var(--darkBlue);
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-row-gap: .5rem;
+	justify-content: space-between;
+	align-content: center;
+	height: 7rem;
+	width: 100%;
+	border-radius: 1rem;
+	padding: 1.5rem;
+	align-self: end;
+}
+.activity-card-content:hover{
+	background-color: var(--desaturatedBlue);
+	cursor: pointer;
+}
+
+h2{
+	font-weight: 400;
+	align-self: center;
+}
+h3{
+	font-weight: 300;
+	font-size: 1.6rem;
+	align-self: center;
+}
+.dots{
+	letter-spacing: .5rem;
+	font-weight: 500;
+	text-align: right;
+	align-self: center;
+}
+
+.time{
+	text-align: right;
+	font-weight: 300;
+	align-self: center;
+}
+.active{
+	color:var(--white);
+}
+
 
 
 @media (min-width: 768px){
 	body{
-		height: 100vh;
 		padding: 0 2rem;
 	}
-	.mainContainer{
-		flex-direction: row;
-		column-gap: 2rem;
+	.grid-container{
+		grid-template-columns: repeat(2, auto);
+		height: 100vh;
 	}
-	.cardBg{
-		min-width: 13rem;
+	.grid-item{
+		margin: 1rem;
+		align-self: center;
 	}
-	.cardFg{
-		flex-direction: column;
-		align-items: flex-start;
-		row-gap: 1rem;
+	.profile{
+		max-width: 10rem;
 	}
-	.timeFrame{
-		flex-direction: column;
-		text-align: left;
-	}
-	.activityContainer{
-		min-width: 13rem;
-		height: 11rem;
-	}
-	.activitiesCards{
-		flex-direction: row;
-		flex-wrap: wrap;
-		column-gap: 2rem;
-	}
-	.time{
-		flex-direction: column;
-	}
-}
+	.profile-header{
+		min-width: 5rem;
+		grid-template-columns: auto;
+		grid-row-gap: 1rem;
 
+	}
+	.profile-timeframe{
+		grid-template-columns: auto;
+		grid-row-gap: .8rem;
+		justify-content: start;
+		padding-left: 2rem;
+	}
+	.activity{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-column-gap: 1rem;
+	}
+
+	.activity-card-bg {
+		min-width: 10rem;
+	}
+
+	.activity-card-content{
+		padding: 1rem;
+	}
+	h2{
+		align-self: center;
+	}
+	h3{
+		font-size: 1.6rem;
+		grid-column: span 2;
+	}
+
+}
 
 
 
 @media (min-width: 1024px){
 	body{
-		height: 100vh;
 		padding: 0 2rem;
 	}
-	.mainContainer{
-		flex-direction: row;
-		column-gap: 2rem;
+	.grid-container{
+		height: 100vh;
+		grid-template-columns: repeat(2, auto);
 	}
-	.cardBg{
+	.grid-item{
+		margin: 1rem;
+		align-self: center;
+	}
+	.profile{
+		max-width: 10rem;
+	}
+	.profile-header{
+		min-width: 10rem;
+		grid-template-columns: auto;
+		grid-row-gap: 1rem;
+	}
+	.profile-timeframe{
+		grid-template-columns: auto;
+		grid-row-gap: .8rem;
+		justify-content: start;
+		padding-left: 2rem;
+	}
+	.activity{
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-column-gap: 1rem;
+	}
+
+	.activity-card-bg {
 		min-width: 15rem;
 	}
-	.cardFg{
-		flex-direction: column;
-		align-items: flex-start;
-		row-gap: 1rem;
+
+	.activity-card-content{
+		height: 8rem;
+		padding: 1rem;
 	}
-	.timeFrame{
-		flex-direction: column;
-		text-align: left;
-	}
-	.activityContainer{
-		min-width: 13rem;
-		height: 11rem;
-	}
-	.activitiesCards{
-		flex-direction: row;
-		flex-wrap: wrap;
-		column-gap: 1.5rem;
-	}
-	.time{
-		flex-direction: column;
-	}
+
 }
 
 
 
+
+
 @media (min-width: 1440px){
-	body{
-		height: 100vh;
-		padding: 0 8rem;
+
+	.profile{
+		max-width: 15rem;
 	}
-	.mainContainer{
-		flex-direction: row;
-		column-gap: 2rem;
+	.profile-header{
+		max-width: 15rem;
+		grid-row-gap: 1.5rem;
 	}
-	.cardBg{
+	.profile-header > img{
+		width: 4rem;
+	}
+
+	.activity-card-bg {
 		min-width: 15rem;
 	}
-	.cardFg{
-		flex-direction: column;
-		align-items: flex-start;
-		row-gap: 1rem;
-	}
-	.timeFrame{
-		flex-direction: column;
-		text-align: left;
-	}
-	.activityContainer{
-		min-width: 15rem;
-		height: 12rem;
-	}
-	.activitiesCards{
-		flex-direction: row;
-		flex-wrap: wrap;
-		column-gap: 2rem;
-	}
-	.time{
-		flex-direction: column;
-	}
+
+
 }

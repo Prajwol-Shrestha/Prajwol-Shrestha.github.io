@@ -11,64 +11,49 @@
 
   <link rel="stylesheet" type="text/css" href="style.css">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
-  <div class="mainContainer">
+  <div class="grid-container">
+    <div class="grid-item profile"> 
+      
+      <div class="profile-card">
 
-    <div class="profileCard"> 
-
-      <!-- Profile Section -->
-      <div class="cardBg">
-        <div class="cardFg">
-          <img src="./images/image-jeremy.png" alt="Jeremy Image">
+        <div class="profile-header">
+          <img src="./images/image-jeremy.png">
           <div>
             <p> Report for </p>
-            <h2> Jeremy Robson </h2>
+            <h1> Jeremy Robson</h1>
           </div>
-
         </div>
 
-        <div class="timeFrame">
-          <span class="daily" onclick="active('daily', 'Yesterday')"> Daily </span>
-          <span class="weekly" onclick="active('weekly', 'Last Week')"> Weekly </span>
-          <span class="monthly" onclick="active('monthly', 'Last Month')"> Monthly </span>
+        <div class="profile-timeframe">
+          <p class="daily" onclick="changeTimeFrame('daily', 'Yesterday')"> Daily </p>
+          <p class="weekly active" onclick="changeTimeFrame('weekly', 'Last Week')"> Weekly </p>
+          <p class="monthly" onclick="changeTimeFrame('monthly', 'Last Month')"> Monthly </p>
         </div>
+        
       </div>
     </div>
-      
 
 
-      <!-- Activities Section -->
 
-    <div class="activitiesCards">
+    <div class="grid-item activity">
+
+    <!-- Template For Activity Cards -->
 
 
-      <!-- Template Card -->
-     
-     <!--    <div class="activityContainer">
-          <div class="activityContent">
-            <div class="title">
-              <h3> Work </h3>
-              <span> ... </span>
-            </div>
-
-            <div class="time">
-              <h2> 32 hrs</h2>
-              <span> Last Week - 36 hrs</span>
-            </div>
-          </div>
-        </div> -->
-    
-
+     <!--  <div class="activity-card-bg work">
+        <div class="activity-card-content">
+          <h2> Work </h2>
+          <span class="dots"> ... </span>
+          <h3> 32 hrs </h3>
+          <span class="time"> Last Week - 36 hrs </span>
+          
+        </div>
+      </div> -->
 
     </div>
-
 
 
   </div>
@@ -77,7 +62,6 @@
 
   <script src="data.json"></script>
   <script src="script.js"></script>
-
 
 </body>
 </html>
