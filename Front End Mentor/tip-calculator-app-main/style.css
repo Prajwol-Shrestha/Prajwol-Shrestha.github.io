@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+:root{
+	--strongCyan: hsl(172, 67%, 45%);
+	--veryDarkCyan: hsl(183, 100%, 15%);
+	--veryDarkGrayishCyan: hsl(186, 14%, 43%);
+	--darkGrayishCyan: hsl(184, 14%, 56%);
+	--lightGrayishCyan: hsl(185, 41%, 84%);
+	--veryLightGrayishCyan: hsl(189, 41%, 97%);
+	--white: hsl(0, 0%, 100%);
+}
+
+*,html,body{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: 'Space Mono', monospace; /*400, 700*/
+}
+
+
+.main-container{
+	background-color: var(--lightGrayishCyan);
+	height: 100vh;
+}
+.main-container > h2{
+	text-align: center;
+	padding: 2rem 0 1rem 0;
+	color: var(--veryDarkCyan);
+	letter-spacing: .5rem;
+}
+.grid-container{
+	background-color: var(--white);
+	border-radius: 1rem;
+	padding: 1.5rem;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: auto;
+	gap: 2rem;
+	grid-template-areas: 
+	"left-col right-col";
+}
+
+.left-col{
+	grid-area: left-col;
+	grid-column: 1 / span 2;
+}
+.left-col h4{
+	color: var(--veryDarkGrayishCyan);
+}
+
+.right-col{
+	grid-area: .;
+	grid-column: 1 / span 2;
+}
+
+.amount, .people{
+	background: url('./images/icon-dollar.svg') no-repeat scroll 15px;
+	background-color: var(--lightGrayishCyan);
+	color: var(--veryDarkCyan);
+	padding: 0.5rem 1.5rem;
+	border: none;
+	text-align: right;
+	font-weight: 700;
+	width: 100%;
+}
+.people{
+	background: url('./images/icon-person.svg') no-repeat scroll 15px;
+	background-color: var(--veryLightGrayishCyan);
+}
+
+.tip-container{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: auto;
+	gap: 1rem;
+	margin: 1rem 0 2rem 0;
+}
+
+.five, .ten, .fifteen, .twentyfive, .fifty, .custom{
+	background-color: var(--veryDarkCyan);
+	color: var(--white);
+	text-align: center;
+	font-weight: 700;
+	border-radius: .3rem;
+	padding: 0.5rem 2rem;
+}
+.custom{
+	background-color: var(--lightGrayishCyan);
+	color: var(--veryDarkGrayishCyan);
+}
+.amount-grid-container{
+	background-color: var(--veryDarkCyan);
+	border-radius: .6rem;
+	padding: 1rem;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 1rem;
+}
+.amount-grid-container h4{
+	color: var(--white);
+}
+.right-col span{
+	color: var(--veryDarkGrayishCyan);
+	font-weight: 700;
+}
+.amount-grid-container > div{
+	align-self: center;
+}
+
+.tip-amount, .total{
+	justify-self: end;
+}
+
+.tip-amount span, .total span{
+	color: var(--strongCyan);
+	font-size: 1.5rem;
+	font-weight: 700;
+}
+
+.reset-btn{
+	grid-column: 1 / span 2;
+	padding: 0.5rem 2rem;
+	background-color: var(--strongCyan);
+	color: var(--veryDarkCyan);
+	font-weight: 700;
+	border: none;
+	border-radius: .5rem;
+	margin-top: 1rem;cursor: pointer;
+}
+.selected{
+	background-color: var(--strongCyan);
+	color: var(--veryDarkCyan);
+}
+
+
+
+
+
+@media (min-width: 768px){
+	.main-container{
+		padding: 0 2rem;
+	}
+	.grid-container{
+		gap: 0;
+	}
+
+	.left-col{
+		grid-area: left-col;
+		padding: 2rem;
+	}
+	.right-col{
+		grid-area: right-col;
+		padding: 1rem;
+	}
+	.reset-btn{
+		margin-top: 12rem;
+	}
+	.tip-container{
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+
+
+
+
+@media (min-width: 1024px){
+	.main-container{
+		padding: 0 6rem;
+	}
+	.grid-container{
+		gap: 0;
+		padding: 1.6rem;
+	}
+
+}
+
+
+
+
+@media (min-width: 1440px){
+	.main-container{
+		padding: 4rem 15rem;
+	}
+	.grid-container{
+		gap: 1rem;
+		padding: 2rem;
+	}
+	.tip-container{
+		grid-template-columns: repeat(3, 1fr);
+	}
+	.reset-btn{
+		margin-top: 8rem;
+	}
+}
