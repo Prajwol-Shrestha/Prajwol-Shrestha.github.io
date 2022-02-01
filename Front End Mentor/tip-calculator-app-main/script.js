@@ -32,6 +32,7 @@ resetBtn.onclick = () =>{
 
 tipContainerEL.forEach( tip => tip.onclick = () => {
 
+	tipContainerEL.forEach( item => item.classList.remove('selected'));
 	tip.classList.add('selected');
 	if( tip.innerText != 'Custom'){
 		calculate(parseInt(tip.innerText, 10));
@@ -48,6 +49,8 @@ tipContainerEL.forEach( tip => tip.onclick = () => {
 		}
 	}
 })
+
+
 
 
 // Calculting and displaying the calculations
