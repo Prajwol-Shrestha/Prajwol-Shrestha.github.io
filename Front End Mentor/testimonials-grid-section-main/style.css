@@ -27,7 +27,7 @@ main{
 	display: grid;
 }
 h2{
-	color: var(--lightGray);
+	color: var(--lightGrayishBlue);
 	padding: 1rem 0;
 }
 p{
