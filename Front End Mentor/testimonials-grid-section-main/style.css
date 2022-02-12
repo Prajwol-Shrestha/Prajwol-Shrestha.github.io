@@ -42,6 +42,11 @@ p{
 .review-para{
 	opacity: 0.7;
 }
+.box-shadow{
+	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.06);
+	-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.06);
+	-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.06);
+}
 .cards{
 	padding: 2rem;
 	border-radius: .8rem;
@@ -111,6 +116,6 @@ p{
 
 @media (min-width: 1440px){
 	body{
-		padding: 5rem 15rem;
+		padding: 6.5rem 12rem;
 	}
 }
