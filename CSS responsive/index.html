@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> CSS Responsive Final Challenge </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <header class="nav-bg">
+            <nav class="nav container">
+                <img src="./logo.svg" alt="Logo CRL" class="img">
+                <span class="hamburger" onclick = "openNav()"> &#9776; </span>
+
+              
+
+                <div class="large-menu">
+                    <ul class="links flex">
+                        <li> <a href="#index.html" class="primary-link"> Home </a> </li>
+                        <li> <a href="#" class="primary-link"> About </a> </li>
+                        <li> <a href="#" class="primary-link"> Contact </a> </li>
+                        <li> <a href="#" class="primary-link"> Sign in </a> </li>
+                        <li> <a href="#" class="primary-link sign-up"> Sign up </a> </li>
+                    </ul>
+                </div>
+                <span class="close-btn" onclick = "closeNav()"> &times; </span>
+            </nav>
+            <div class="overlay">
+                <ul class="links small">
+                    <li> <a href="#index.html" class="sm primary-link"> Home </a> </li>
+                    <li> <a href="#" class="sm primary-link"> About </a> </li>
+                    <li> <a href="#" class="sm primary-link"> Contact </a> </li>
+                    <li> <a href="#" class="sm primary-link"> Sign in </a> </li>
+                    <li> <a href="#" class="sm primary-link sign-up"> Sign up </a> </li>
+                </ul>
+            </div>
+        </header>
+
+        <main>
+            <section class="hero-container">
+                <!-- Use Flex in large screen -->
+                <div class="container flex"> 
+                    <h1 class="hero-title"> Responsive layouts <span class="hero-sub__title">don't have to be a struggle </span></h1>
+                    <div class="hero-content">
+                        <p class="hero-para">
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua.
+                        </p>
+                        <button class="hero-btn"> i want to learn </button>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="second-section">
+                <!-- Use Flex in large screen -->
+                <div class="container flex">
+                    <div class="left-col">
+                        <h3 class="sectionSection-title"> Mobile-first </h3>
+                        <p class="secondSection-para">
+                            Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut
+                            enim ad minim veniam.
+                        </p>
+                    </div>
+                    <div class="middle-col">
+                        <h3 class="sectionSection-title"> Efficient </h3>
+                        <p class="secondSection-para">
+                            Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut
+                            enim ad minim veniam.
+                        </p>
+                    </div>
+                    <div class="right-col">
+                        <h3 class="sectionSection-title"> Done Right </h3>
+                        <p class="secondSection-para">
+                            Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut
+                            enim ad minim veniam.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="third-section">
+                <div class="container third">
+                    <div class="left-col-third">
+                        <h2 class="third-section-main-title">
+                            It doesn't have to be so hard
+                        </h2>
+                        <p class="third-section-main-para">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                            enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam.
+                        </p>
+                        <img src="./the-image.jpg" alt="Website Layout" class="third-section-img">
+                        <p class="third-section-main-para">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                            enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam.
+                        </p>
+                    </div>
+                    <div class="right-col-third">
+                        <div class="sidebar">
+                            <h3 class="sidebar-title"> Break it down </h3>
+                            <p class="sidebar-para"> 
+                                Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut
+                                labore et dolore magna aliqua.
+                            </p>
+                        </div>
+
+                        <div class="sidebar">
+                            <h3 class="sidebar-title"> Work your way up </h3>
+                            <p class="sidebar-para"> 
+                                Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut
+                                labore et dolore magna aliqua.
+                            </p>
+                        </div>
+
+                        <div class="sidebar">
+                            <h3 class="sidebar-title">  </h3>
+                            <p class="sidebar-para"> 
+                                Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut
+                                labore et dolore magna aliqua.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        
+        
+        <footer class="footer">
+            
+            <div class="container">
+                <h1 class="footer-title"> just scratching the surface </h1>
+                <div class="flex">
+                    <div class="about gap-footer">
+                        <h3 class="footer-secondary-title">
+                            About our company
+                        </h3>
+                        <p class="about-para">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam.
+                        </p>
+                    </div>
+
+                    <div class="footer-links gap-footer">
+                        <h3 class="footer-secondary-title">
+                            Getting around
+                        </h3>
+                        <p class="about-para">
+                            <ul class="links">
+                                <li> <a href="#index.html" class="link"> Home </a> </li>
+                                <li> <a href="#index.html" class="link"> About </a> </li>
+                                <li> <a href="#index.html" class="link"> Contact </a> </li>
+                            </ul>
+                        </p>
+                    </div>
+
+                    <div class="other-things gap-footer">
+                        <h3 class="footer-secondary-title">
+                            Other things
+                        </h3>
+                        <p class="about-para">
+                            <ul class="links">
+                                <li> <a href="#index.html" class="link"> Lorem ipsum </a> </li>
+                                <li> <a href="#index.html" class="link"> dolor </a> </li>
+                                <li> <a href="#index.html" class="link"> sit amet </a> </li>
+                                <li> <a href="#index.html" class="link"> consectetur </a> </li>
+                            </ul>
+                        </p>
+                    </div>
+
+
+                    <div class="and-more gap-footer">
+                        <h3 class="footer-secondary-title">
+                            And more
+                        </h3>
+                        <p class="about-para">
+                            <ul class="links">
+                                <li> <a href="#index.html" class="link"> Lorem ipsum </a> </li>
+                                <li> <a href="#index.html" class="link"> dolor </a> </li>
+                                <li> <a href="#index.html" class="link"> sit amet </a> </li>
+                                <li> <a href="#index.html" class="link"> consectetur </a> </li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+      
+        
+        <script src="./script.js" async defer></script>
+    </body>
+</html>

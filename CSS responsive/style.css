@@ -1,0 +1,268 @@
+:root{
+    --navBg: #2E323F;
+    --heroBg: #3B4050;
+    --white: #FFFFFF;
+    --grey: #A59678;
+    --para: #6F737F;
+
+    --other: 'Montserrat', sans-serif;
+    --title: 'Oswald', sans-serif;
+}
+
+
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Oswald', sans-serif; */
+
+*,html, body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+img{
+    max-width: 100%;
+}
+
+.container{
+    max-width: 1240px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/*      Typography       */
+.hero-title{
+    font-size: 2rem;
+    color: var(--white);
+    font-family: var(--title);
+    font-weight: 700;
+    letter-spacing: .1em;
+    padding: 0 0 1em 0;
+}
+.hero-sub__title{
+    color: var(--grey);
+}
+.hero-content{
+    color: var(--para);
+}
+.hero-para{
+    font-size: 1.25rem;
+}
+
+
+.sectionSection-title,
+.third-section-main-title{
+    text-align: center;
+    color: var(--grey);
+    padding: .5em 0;
+    font-size: 1.5rem;
+}
+.third-section-main-title{
+    font-size: 2rem;
+}
+
+.sidebar-title{
+    color: var(--white);
+    padding: .5em 0;
+    font-size: 1.5rem;
+}
+.sidebar-para{
+    color: var(--white);
+    opacity: 0.8;
+}
+
+.footer-title{
+    color: var(--white);
+    text-align: center;
+    padding-bottom: 1em;
+}
+.footer-secondary-title{
+    color: var(--grey);
+    padding-bottom: .5em;
+}
+.about-para{
+    color: var(--para);
+}
+
+
+/*      Navigation       */
+.nav-bg{
+    background-color: var(--navBg);
+}
+.nav{
+    padding: 1em 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.primary-link{
+    text-decoration: none;
+    color: var(--white);
+    font-weight: bold;
+}
+.primary-link:hover,
+.primary-link:focus{
+    opacity: .5;
+}
+.sign-up{
+    background-color: var(--grey);
+    padding: .5em 1em;
+    border-radius: 1em;
+}
+.hamburger{
+    font-size: 1.5rem;
+    color: var(--white);
+    padding: .5em 0;
+}
+.large-menu{
+    display: none;
+}
+
+/* Overlay */
+.overlay{
+    display: none;
+    padding: 4em 0;
+}
+.small{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+.close-btn{
+    padding: .5em 0;
+    font-size: 1.5em;
+    color: var(--white);
+    display: none;
+}
+.show{
+    display: block;
+}
+.hide{
+    display: none;
+}
+
+/*      Hero Section      */
+
+.hero-container{
+    background-color: var(--heroBg);
+    padding: 3em 0;
+}
+.hero-btn{
+    border-radius: 1em;
+    text-transform: uppercase;
+    margin-top: 1.5em;
+    padding: .8em 1.5em;
+    background-color: var(--grey);
+    color: var(--white);
+    font-family: var(--title);
+    letter-spacing: .15em;
+    border: none;
+}
+
+
+/*      Second Section     */
+.second-section{
+    background-color: rgb(224, 232, 235);  
+    padding: 3em 0;
+}
+
+.left-col,
+.middle-col,
+.right-col{
+    margin-bottom: 1.5em;
+    text-align: center;
+}
+
+
+
+
+/*      Third Section      */
+
+.third-section{
+    padding: 3em 0;
+}
+.third-section-main-para{
+    margin: 1.5em 0;
+}
+
+.sidebar{
+    margin: 2em 0;
+    background-color: var(--heroBg);
+    padding: 1.5em 1em;
+}
+
+
+/*     Footer      */
+.footer{
+    padding: 2.5em 0;
+    background-color: var(--heroBg);
+    text-align: center;
+}
+.gap-footer{
+    margin-bottom: 2em;
+}
+.links{
+    list-style: none;
+}
+.link{
+    text-decoration: none;
+    color: var(--para);
+    margin-bottom: 1em;
+}
+.link:hover,
+.link:focus{
+    color: var(--white);
+}
+
+
+
+
+@media (min-width: 700px){
+    .hamburger{
+        display: none;
+    }
+    .large-menu{
+        display: flex;
+    }
+    .flex{
+        display: flex;
+        gap: 2em;
+    }
+    .hero-title,
+    .hero-content{
+        width: 50%;
+    }
+    .left-col,
+    .right-col,
+    .middle-col{
+        width: 100%;
+    }
+    .right-col-third{
+        display: flex;
+        gap: 1em;
+    }
+    .footer{
+        text-align: left;
+    }
+    .about{
+        width: 70%;
+    }
+    .footer-links,
+    .other-things,
+    .and-more{
+        width: 30%;
+    }
+}
+
+@media (min-width: 1000px){
+    .hero-container{
+        padding: 6em 0;
+    }
+    .right-col-third{
+        display: block;
+    }
+    .third{
+        display: flex;
+        gap: 2em;
+    }
+}
