@@ -1,0 +1,354 @@
+:root{
+    --bold: 'Fraunces', serif;
+    --notBold: font-family: 'Barlow', sans-serif;
+
+    --white: hsl(0, 0%, 100%);
+    --grayishBlue: hsl(210, 4%, 67%);
+    --veryDarkDesaturatedBlue: hsl(212, 27%, 19%);
+    --veryDarkGrayishBlue: hsl(213, 9%, 39%);
+    --darkGrayishBlue: hsl(232, 10%, 55%);
+
+    --darkDesaturatedCyan: hsl(167, 40%, 24%);  /* graphic design text */
+    --darkBlue: hsl(198, 62%, 26%);             /* photography text  */
+    --darkModerateCyan: hsl(168, 34%, 41%);     /* Footer   */
+    --footer: rgb(175,238,238);
+    --yellow: hsl(51, 100%, 49%);
+    --softRed: hsl(7, 99%, 70%);
+}
+
+/* font-family: 'Barlow', sans-serif; 600 
+font-family: 'Fraunces', serif; 700, 900 */
+
+*,html,body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+img{
+    max-width: 100%;
+}
+main,
+footer{
+    max-width: 1600px;
+}
+
+/*     Main     */
+.main{
+    padding: 2em;
+    background: url('./images/mobile/image-header.jpg') no-repeat center;
+    background-size: cover;
+}
+
+
+/*     Navigation   */
+.nav-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hamburger{
+    font-size: 1.5em;
+    color: white;
+}
+
+
+/*     Hero    */
+
+.center{
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+.hero-title{
+    color: var(--white);
+    font-family: var(--bold);
+    font-weight: 900;
+    letter-spacing: .15em;
+    margin: 2em 0 1em 0;
+    text-transform: uppercase;
+}
+.down-arrow{
+    margin-bottom: 6em;
+}
+
+
+
+.links-large{
+    display: none;
+    list-style: none;
+    gap: 1.5em;
+}
+
+
+
+
+
+/*    Mobile Menu   */
+
+.links-small{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+.link{
+    color: var(--veryDarkGrayishBlue);
+    font-family: var(--bold);
+    font-size: 1.25rem;
+    text-decoration: none;
+}
+.contact{
+    color: var(--veryDarkDesaturatedBlue);
+    background-color: var(--yellow);
+    padding: .5em 1em;
+    border-radius: 1em;
+    text-transform: uppercase;
+}
+
+.overlay {
+    position: relative;
+    display: inline-block;
+}
+  
+.overlay .overlaytext {
+    width: 80vw;
+    background-color: var(--white);
+    color: #fff;
+    text-align: center;
+    padding: 4em 0;
+    position: absolute;
+    z-index: 1;
+    top: 200%;
+    right: 0;
+    margin-left: -60px;
+}
+  
+.overlay .overlaytext::after {
+    content: "";
+    position: absolute;
+    bottom: 98%;
+    left: 91.5%;
+    margin-left: -5px;
+    border-width: 15px;
+    border-style: solid;
+    border-color: transparent var(--white) var(--white) transparent;
+}
+  
+
+.hide{
+    visibility: hidden;
+}
+.visible{
+    visibility: visible;
+}
+
+
+/*     About    */
+.row{
+    text-align: center;
+}
+.about-title,
+.graphic-title,
+.photography-title{
+    font-family: var(--bold);
+    font-family: 900;
+    font-size: 2rem;
+    padding-bottom: .5em;
+    color: var(--veryDarkDesaturatedBlue);
+}
+
+
+.para,
+.learn-more,
+.graphic-para,
+.photography-para{
+    font-family: var(--notBold);
+    font-size: 1.2rem;
+    padding-bottom: 1em;
+    color: var(--grayishBlue);
+}
+.graphic-title,
+.graphic-para{
+    color: var(--darkDesaturatedCyan);
+}
+.photography-title,
+.photography-para{
+    color: var(--darkBlue);
+}
+
+.learn-more{
+    text-decoration: none;
+    color: var(--veryDarkDesaturatedBlue);
+    font-family: var(--bold);
+}
+.second-content{
+    text-align: center;
+    padding: 2em;
+}
+
+
+.row-3{
+    background: url('./images/mobile/image-graphic-design.jpg') no-repeat center;
+    background-size: cover;
+    height: 80vh;
+}
+.row-3__content{
+    position: relative;
+    top: 60%;
+}
+
+.row-4{
+    background: url('./images/mobile/image-photography.jpg') no-repeat center;
+    background-size: cover;
+    height: 80vh;
+}
+.row-4__content{
+    position: relative;
+    top: 60%;
+}
+
+
+
+/*     Testimonials      */
+
+.testimonials{
+    margin: 4em 0;
+    text-align: center;
+}
+.testimonial{
+    margin: 2em 0;
+}
+.testimonial-content{
+    padding: 1.5em;
+}
+.testimonials-title{
+    font-family: var(--bold);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    color: var(--grayishBlue);
+    margin-bottom: 3em;
+}
+.testimonial-para{
+    font-family: var(--notBold);
+    font-size: 1.2rem;
+    padding-bottom: 1em;
+    color: var(--veryDarkDesaturatedBlue);
+}
+.name{
+    font-family: var(--bold);
+    font-weight: 700;
+    color: var(--veryDarkDesaturatedBlue);
+}
+.job{
+    color: var(--grayishBlue);
+}
+
+.avatar{
+    width: 4em;
+    border-radius: 50%;
+}
+
+
+
+
+/*     Gallery       */
+.gallery-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+
+
+/*     Footer    */
+
+.footer{
+    padding: 3em 0;
+    background-color: var(--footer);
+    color: var(--darkDesaturatedCyan);
+    text-align: center;
+}
+
+.footer-title{
+    font-family: var(--bold);
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+.footer-links{
+    margin: 2em 0;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+.footer-link{
+    text-decoration: none;
+    color: var(--darkDesaturatedCyan);
+    font-family: var(--bold);
+}
+
+
+@media (min-width: 750px){
+    .main{
+        background-image: url('./images/desktop/image-header.jpg');
+    }
+    .down-arrow{
+        margin: 6em auto;
+    }
+    .overlay{
+        display: none;
+    }
+    .links-large{
+        display: flex;
+    }
+    .hero-title{
+        font-size: 2.5rem;
+    }
+    .flex{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .row{
+        width: 50%;
+    }
+    .second-content{
+        text-align: left;
+    }
+    .row-3__content,
+    .row-4__content{
+        text-align: center;
+    }
+    .row-3{
+        background-image: url('./images/desktop/image-graphic-design.jpg');
+    }
+    .row-4{
+        background-image: url('./images/desktop/image-photography.jpg');
+    }
+
+    .testimonials-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2em;
+        margin: 0 3em;
+    }
+    .testimonial-content,
+    .testimonial-para{
+        padding-bottom: 2em;
+    }
+
+    .gallery-container{
+        grid-template-columns: repeat(4, auto);
+    }
+    .second{
+        order: 2;
+    }
+    .first{
+        order: 1;
+    }
+    
+}
