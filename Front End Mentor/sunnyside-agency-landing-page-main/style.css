@@ -304,6 +304,31 @@ footer{
     .links-large{
         display: flex;
     }
+    .link{
+        color: var(--white);
+    }
+    .link:hover,
+    .link:focus{
+        opacity: .65;
+    }
+    .contact{
+        color: var(--darkDesaturatedCyan);
+        background-color: var(--white);
+    }
+    .contact:hover,
+    .contact:focus{
+        color: var(--white);
+        background-color: transparent;
+        border: 2px solid var(--white);
+    }
+    .footer-link:hover,
+    .footer-link:focus{
+        color: var(--white);
+    }
+    .social-link:hover,
+    .social-link:focus{
+        filter:sepia(100%) grayscale(100%);
+    }
     .hero-title{
         font-size: 2.5rem;
     }
@@ -317,6 +342,7 @@ footer{
     }
     .second-content{
         text-align: left;
+        padding: 0 4em;
     }
     .row-3__content,
     .row-4__content{
