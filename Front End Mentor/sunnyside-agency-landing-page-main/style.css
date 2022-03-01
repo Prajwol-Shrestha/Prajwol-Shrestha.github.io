@@ -332,6 +332,15 @@ footer{
     .hero-title{
         font-size: 2.5rem;
     }
+    .about-title,
+    .graphic-title,
+    .photography-title{
+        font-size: 2.5rem;
+    }
+    .testimonials-title{
+        font-size: 1.8rem;
+    }
+
     .flex{
         display: flex;
         justify-content: center;
