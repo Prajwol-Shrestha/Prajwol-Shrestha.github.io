@@ -1,0 +1,348 @@
+:root{
+    --primary: #B4FE98;
+    --secondary: #080808;
+
+    --bg: 	#998CEB;
+    --footer: 	#A9A9A9;
+    --white: #fff;
+}
+
+/* font-family: 'Lato', sans-serif; 300 400 700 */
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+
+
+.container{
+    width: 90%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+img{
+    width: 100%;
+}
+
+/* navigation */
+nav{
+    /* position: fixed; */
+}
+.large-screen-links{
+    display: none;
+}
+.logo{
+    width: 10em;
+}
+.nav-contact{
+    background-color: var(--bg);
+    color: var(--white);
+    padding: .6em 0;
+}
+.contact-header{
+    color: var(--secondary);
+    padding-right: .5em;
+}
+.fa{
+    margin-left: .5em;
+}
+
+.navigation{
+    padding: 1em 0;
+    background-color: var(--primary)
+}
+
+.small-screen-links{
+    display: none;
+}
+.links{
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5em;
+    list-style: none;
+}
+.link{
+    text-transform: uppercase;
+}
+
+
+
+
+
+/* Hero Section */
+.hero{
+    height: 80vh;
+    background: url('hero-image.jpg') no-repeat center;
+    background-size: cover;
+}
+.title{
+    position: relative;
+    top: 50vh;
+    color: var(--white);
+    text-align: center;
+}
+
+
+/* Second Section */
+.consult{
+    padding: 4em 2em;
+    gap: 1em;
+    background: url('./consult.jpg') no-repeat center;
+    background-size: cover;
+}
+.certified{
+    padding: 4em 2em;
+    gap: 1em;
+    background: url('./certified.jpg') no-repeat center;
+    background-size: cover;
+}
+.helpline{
+    padding: 4em 2em;
+    gap: 1em;
+    background: url('./helpline.jpg') no-repeat center;
+    background-size: cover;
+}
+.services-icon{
+    padding: 2em 1.5em;
+    border: 2px solid var(--white);
+}
+.second-sub-title,
+.second-para,
+.services-icon{
+    color: var(--white);
+}
+.para{
+    color: var(--secondary);
+    text-align: center;
+}
+
+
+
+/* Marvis Services Section */
+.third-section{
+    margin: 2.5em 0;
+}
+.services-title,
+.why-choose-title,
+.contact-title{
+    color: var(--secondary);
+    text-align: center;
+}
+.primary{
+    color: var(--primary);
+}
+.services-subtitle{
+    color: var(--white);
+    padding-bottom: .5em;
+}
+
+
+.para-card{
+    color: var(--white);
+}
+.flip-card {
+    margin-top: 2em;
+    background-color: transparent;
+    width: auto;
+    height: 12em;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: var(--secondary);
+    color: var(--white);
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    padding: 1em;
+    background-color: var(--secondary);
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+
+
+/* Fourth Section */
+.fourth-section{
+    padding: 2.5em 0;
+    background-color: var(--primary);
+}
+.fourth-section-content{
+    margin-top: 2em;
+    display: grid;
+    gap: 1em;
+}
+.right-col-title{
+    color: var(--white);
+    padding: .5em 0;
+    text-align: center;
+}
+
+
+.fifth-section{
+    padding: 2.5em 0;
+}
+.card-container{
+    margin: 2em 0;
+}
+.card{
+    background-color: var(--primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+.fa-w-20,
+.fa-w-14{
+    color: var(--bg);
+    width: 4em;
+    padding: 1em;
+    border: 1px solid var(--bg);
+    border-radius: 50%;
+}
+.card-title{
+    padding: 1em 0;
+    color: var(--bg);
+    text-align: center;
+}
+
+
+
+.sixth-section{
+    padding: 2.5em 0;
+    background-color: var(--primary);
+}
+.contact{
+    margin: 1.5em 0;
+}
+form{
+    padding: 2em 0;
+}
+input,
+textarea{
+    width: 100%;
+    padding: .5em 1em;
+    margin: .5em 0;
+}
+
+
+.footer{
+    padding: 2.5em 0 0 0;
+    background-color: var(--footer);
+}
+.quick-links,
+.connect{
+    text-align: center;
+    padding: 1em 0;
+}
+.links-footer{
+    text-align: center;
+    list-style: none;
+}
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+    margin-bottom: 2.5em;
+}
+.copyright{
+    text-align: center;
+    color: var(--secondary);
+    background-color: var(--primary);
+}
+
+@media (min-width: 768px){
+    .fa-bars{
+        display: none;
+    }
+    .large-screen-links{
+        display: flex;
+    }
+    .links{
+        flex-direction: row;
+        gap: 1em;
+    }
+    .link:hover,
+    .link:focus{
+        color: var(--white);
+    }
+
+    .Second-section{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .third-section,
+    .fourth-section,
+    .fifth-section,
+    .sixth-section{
+        padding: 3em 0;
+    }
+    .seperator{
+        width: 30%;
+        margin: 0 auto;
+    }
+    .services-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .flip-card{
+        height: 15em;
+    }
+    .fourth-section-content,
+    .contact{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5em;
+        align-items: center;
+    }
+    .card-container,
+    .footer-layout{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2em;
+    }
+    .connect{
+        text-align: left;
+    }
+    .copyright{
+        padding: 1.5em 0;
+    }
+
+}
