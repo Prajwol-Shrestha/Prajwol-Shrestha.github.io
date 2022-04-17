@@ -1,0 +1,373 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 14px;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.my-1 {
+  margin: 1em 0;
+}
+
+.py-1 {
+  padding: 1em 0;
+}
+
+.px-1 {
+  padding: 0 1em;
+}
+
+.my-2 {
+  margin: 2em 0;
+}
+
+.py-2 {
+  padding: 2em 0;
+}
+
+.my-3 {
+  margin: 3em 0;
+}
+
+.py-5 {
+  padding: 5em 0;
+}
+
+.hero-title {
+  color: hsl(0deg, 0%, 100%);
+  text-align: center;
+  line-height: 1.5;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5rem;
+}
+@media (min-width: 760px) {
+  .hero-title {
+    text-align: left;
+  }
+}
+
+.productive-title,
+.signup-title {
+  color: hsl(0deg, 0%, 100%);
+  text-align: center;
+  line-height: 1.5;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.25rem;
+}
+@media (min-width: 760px) {
+  .productive-title,
+.signup-title {
+    text-align: left;
+  }
+}
+
+.card-title {
+  color: hsl(0deg, 0%, 100%);
+  text-align: center;
+  line-height: 1.5;
+  font-family: "Raleway", sans-serif;
+  font-size: 0.9rem;
+}
+@media (min-width: 760px) {
+  .card-title {
+    text-align: left;
+  }
+}
+
+.hero-para,
+.card-content {
+  color: hsl(0deg, 0%, 100%);
+  text-align: center;
+  line-height: 1.5;
+  font-family: "Open Sans", sans-serif;
+  opacity: 0.65;
+}
+@media (min-width: 760px) {
+  .hero-para,
+.card-content {
+    text-align: left;
+  }
+}
+
+.productive-para {
+  color: hsl(0deg, 0%, 100%);
+  text-align: center;
+  line-height: 1.5;
+  font-family: "Open Sans", sans-serif;
+  opacity: 0.65;
+  text-align: left;
+}
+@media (min-width: 760px) {
+  .productive-para {
+    text-align: left;
+  }
+}
+
+.signup-para {
+  color: hsl(0deg, 0%, 100%);
+  text-align: center;
+  line-height: 1.5;
+  font-family: "Open Sans", sans-serif;
+  opacity: 0.65;
+  font-size: 1rem;
+  opacity: 0.85;
+}
+@media (min-width: 760px) {
+  .signup-para {
+    text-align: left;
+  }
+}
+
+.testi-card {
+  color: hsl(0deg, 0%, 100%);
+  text-align: center;
+  line-height: 1.5;
+  text-align: left;
+  font-size: 1rem;
+}
+@media (min-width: 760px) {
+  .testi-card {
+    text-align: left;
+  }
+}
+
+.nav {
+  background-color: hsl(217deg, 28%, 15%);
+}
+.nav .container {
+  justify-content: space-between;
+  align-items: center;
+}
+.nav .container .logo {
+  max-width: 8em;
+}
+.nav .container .links {
+  list-style-type: none;
+  gap: 1.5em;
+}
+.nav .container .links a {
+  color: hsl(0deg, 0%, 100%);
+  opacity: 0.6;
+}
+.nav .container .links a:hover,
+.nav .container .links a:focus {
+  opacity: 1;
+  border-bottom: 2px solid hsl(0deg, 0%, 100%);
+}
+
+.footer-links .links {
+  list-style-type: none;
+  gap: 1.5em;
+}
+.footer-links .links a {
+  color: hsl(0deg, 0%, 100%);
+}
+.footer-links .links a:hover,
+.footer-links .links a:focus {
+  opacity: 0.65;
+}
+
+.social-links {
+  gap: 1em;
+  justify-content: center;
+}
+.social-links svg {
+  width: 2em;
+  fill: hsl(0deg, 0%, 100%);
+}
+
+.email {
+  border-radius: 2em;
+  border: none;
+  padding: 1.25em 0;
+  width: 70%;
+}
+
+.btn-primary {
+  padding: 1.25em 6em;
+  border-radius: 2em;
+  border: none;
+  background-color: hsl(198deg, 60%, 50%);
+  color: hsl(0deg, 0%, 100%);
+}
+.btn-primary:hover, .btn-primary:focus {
+  background-color: hsl(176deg, 68%, 64%);
+}
+
+.btn-center {
+  justify-content: center;
+}
+
+.card {
+  text-align: center;
+}
+
+.testi-card {
+  border-radius: 0.5em;
+  background-color: hsl(219deg, 30%, 18%);
+  padding: 1.5em;
+  box-shadow: rgba(100, 100, 110, 0.2) 0px 5px 10px 0px;
+}
+.testi-card .testi-card-profile {
+  align-items: center;
+  padding-top: 1em;
+  gap: 1em;
+}
+.testi-card .testi-card-profile img {
+  width: 3em;
+  border-radius: 50%;
+}
+
+.signup-card {
+  position: absolute;
+  left: 0;
+  margin: 0 1.5em;
+  padding: 1.5em;
+  border-radius: 0.5em;
+  background-color: hsl(217deg, 28%, 15%);
+  max-width: 50em;
+}
+@media (min-width: 600px) {
+  .signup-card .signup-title,
+.signup-card .signup-para {
+    text-align: center;
+  }
+  .signup-card .btn-center div {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+  }
+  .signup-card .btn-center div input {
+    min-width: 30em;
+  }
+}
+.signup-card .flex {
+  justify-content: center;
+}
+.signup-card .flex .email,
+.signup-card .flex .btn-primary {
+  text-align: center;
+  width: 100%;
+}
+
+.hero {
+  min-height: 90vh;
+  justify-content: center;
+  align-items: center;
+  background: url("/images/bg-curvy-mobile.svg") no-repeat bottom, hsl(217deg, 28%, 15%);
+}
+.hero .container {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 600px) {
+  .hero {
+    background-image: url("/images/bg-curvy-desktop.svg");
+  }
+  .hero .container .hero-img {
+    width: 60%;
+  }
+  .hero .container .hero-content {
+    max-width: 35em;
+  }
+  .hero .container .hero-content .hero-title,
+.hero .container .hero-content .hero-para {
+    text-align: center;
+  }
+}
+
+.services,
+.productive,
+.testimonials {
+  background: hsl(218deg, 28%, 13%);
+}
+
+@media (min-width: 600px) {
+  .services .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
+  }
+  .services .container .card-title,
+.services .container .card-content {
+    text-align: center;
+  }
+}
+
+@media (min-width: 600px) {
+  .productive .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2em;
+  }
+  .productive .container .productive-content .productive-title {
+    text-align: left;
+  }
+}
+
+.productive-content a {
+  color: hsl(176deg, 68%, 64%);
+  text-decoration: underline;
+  align-items: center;
+  gap: 0.25em;
+}
+.productive-content a img {
+  width: 2em;
+}
+
+@media (min-width: 900px) {
+  .testi-card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+  }
+}
+.signup {
+  height: 40vh;
+  position: relative;
+  background-color: hsl(218deg, 28%, 13%);
+}
+
+.footer {
+  padding: 20em 0 2em 0;
+  background-color: hsl(216deg, 53%, 9%);
+}
+.footer .location,
+.footer .phone,
+.footer .email {
+  gap: 2em;
+  align-items: flex-start;
+  color: hsl(0deg, 0%, 100%);
+}
+@media (min-width: 900px) {
+  .footer .container .grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    justify-items: center;
+    gap: 2em;
+  }
+}
